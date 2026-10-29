@@ -6,3 +6,5 @@
 .journal-entry{border-top:1px solid var(--line);padding:28px 0;margin-top:25px}.journal-entry time{font-size:11px;color:var(--muted)}.journal-entry h2{font:30px Georgia,serif}.journal-entry p{white-space:pre-wrap}
 
 .publication-details{display:flex;gap:8px 20px;flex-wrap:wrap;font-style:normal}.publication-details a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}.publication-list .venue{font-style:normal;font-weight:600}.publication-list .publication-date-note,.doi-unavailable{color:var(--muted);font-size:11px}
+
+.research-heading{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:24px}.research-heading h1{margin-top:0}.research-portrait{width:145px;height:auto;flex-shrink:0;object-fit:contain;border:1px solid var(--line);border-radius:5px;background:white}.research-heading .intro{margin-bottom:0}@media(max-width:580px){.research-heading{gap:18px;align-items:flex-start}.research-portrait{width:95px}.research-heading h1{font-size:43px}.research-heading .intro{font-size:14px}}
