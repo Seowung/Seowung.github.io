@@ -42,7 +42,9 @@
     "interestCategories": {
       "cooking": "Cooking",
       "tech": "Tech"
-    }
+    },
+    "brandVerse": "But now faith, hope, and love remain—these three. The greatest of these is love.",
+    "brandReference": "1 Corinthians 13:13 · WEB"
   },
   "ko": {
     "nav": [
@@ -87,6 +89,8 @@
     "interestCategories": {
       "cooking": "요리",
       "tech": "테크"
-    }
+    },
+    "brandVerse": "그런즉 믿음, 소망, 사랑, 이 세 가지는 항상 있을 것인데 그 중의 제일은 사랑이라",
+    "brandReference": "고린도전서 13:13 · 개역한글"
   }
 }
