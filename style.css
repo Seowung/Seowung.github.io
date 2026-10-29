@@ -28,3 +28,5 @@
  .brand{font-size:25px}.brand span{max-width:160px;line-height:1.5}.languages{font-size:10px;gap:2px}.languages button{min-width:30px}header{gap:12px}.research-heading{grid-template-columns:minmax(0,1fr) 88px;gap:14px}.research-heading h1{font-size:36px}.research-heading .intro{font-size:13px}html[lang=ko] .research-heading h1{font-size:34px}.chapters{grid-template-columns:1fr}.card p{min-height:0}.hero h1{font-size:52px}.section-head h2{font-size:25px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.research-interests{margin-top:42px;padding-top:27px;border-top:1px solid var(--line)}.research-interests h2{font:31px "Libre Caslon Display",Georgia,serif;margin:0 0 20px}.research-interests p{max-width:740px;font-size:16px;line-height:1.85;margin:0 0 16px}.research-interests p:first-of-type{color:var(--ink)}@media(max-width:580px){.research-interests{margin-top:32px}.research-interests h2{font-size:29px}.research-interests p{font-size:15px;line-height:1.8}}
