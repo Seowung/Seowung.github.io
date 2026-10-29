@@ -28,20 +28,6 @@
     "dateBasis": "proceedings"
   },
   {
-    "authors": "S Leem, L Gu, C You, K Gong, R Fang",
-    "title": "REVEAL: Multimodal Vision-Language Alignment of Retinal Morphometry and Clinical Risks for Incident AD and Dementia Prediction",
-    "url": "https://proceedings.mlr.press/v315/leem26a.html",
-    "venue": "Medical Imaging with Deep Learning (MIDL)",
-    "year": "2026",
-    "type": "conference",
-    "publishedDate": "2026-07",
-    "doi": null,
-    "sources": [
-      "https://proceedings.mlr.press/v315/leem26a.html"
-    ],
-    "dateBasis": "proceedings"
-  },
-  {
     "authors": "S Leem, Y Yang, AJ Woods, R Fang",
     "title": "Prediction of Alzheimer's disease risk factors from retinal images via deep learning: Development and validation of biologically relevant morphological associations in the UK Biobank",
     "url": "https://doi.org/10.1177/13872877261457650",
@@ -54,6 +40,25 @@
       "https://journals.sagepub.com/doi/10.1177/13872877261457650"
     ],
     "dateBasis": "online"
+  },
+  {
+    "authors": "S Leem, L Gu, C You, K Gong, R Fang",
+    "title": "REVEAL: Multimodal Vision-Language Alignment of Retinal Morphometry and Clinical Risks for Incident AD and Dementia Prediction",
+    "url": "https://proceedings.mlr.press/v315/leem26a.html",
+    "venue": "Medical Imaging with Deep Learning (MIDL) · Proceedings of Machine Learning Research",
+    "year": "2026",
+    "type": "conference",
+    "publishedDate": "2026-05-05",
+    "doi": null,
+    "sources": [
+      "https://proceedings.mlr.press/v315/",
+      "https://proceedings.mlr.press/v315/leem26a.html"
+    ],
+    "dateBasis": "proceedings",
+    "publicationLinkLabel": {
+      "en": "Official proceedings",
+      "ko": "공식 proceedings"
+    }
   },
   {
     "authors": "S Leem, L Gu, R Fang",
