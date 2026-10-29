@@ -69,3 +69,5 @@ header{padding-top:18px;padding-bottom:18px}.site-identity{flex:0 0 280px;min-wi
 
 /* Preserve Sully's original portrait in a soft blue keepsake frame. */
 .site-identity .brand{width:124px;height:124px;padding:8px;background:radial-gradient(circle at 40% 30%,#ffffff 0%,#eff7fe 58%,#dcecf9 100%);border:1px solid #d6e6f3;border-radius:50%;box-shadow:0 5px 20px #336d9c0d,inset 0 0 0 5px #ffffff90}.site-identity .brand img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 3px #36516a18)}.sully-memorial{width:124px;text-align:center;margin-top:9px;font-size:12px;color:#59788f;letter-spacing:.1px}.brand-scripture{margin-top:12px}@media(max-width:580px){.site-identity .brand{width:108px;height:108px;padding:7px}.sully-memorial{width:108px;font-size:10.5px;margin-top:7px}}
+
+.site-identity .brand{width:132px;height:124px;border-radius:14px}.sully-memorial{width:132px}@media(max-width:580px){.site-identity .brand{width:116px;height:108px;border-radius:12px}.sully-memorial{width:116px}}
