@@ -8,3 +8,10 @@
 .publication-details{display:flex;gap:8px 20px;flex-wrap:wrap;font-style:normal}.publication-details a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}.publication-list .venue{font-style:normal;font-weight:600}.publication-list .publication-date-note,.doi-unavailable{color:var(--muted);font-size:11px}
 
 .research-heading{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:24px}.research-heading h1{margin-top:0}.research-portrait{width:145px;height:auto;flex-shrink:0;object-fit:contain;border:1px solid var(--line);border-radius:5px;background:white}.research-heading .intro{margin-bottom:0}@media(max-width:580px){.research-heading{gap:18px;align-items:flex-start}.research-portrait{width:95px}.research-heading h1{font-size:43px}.research-heading .intro{font-size:14px}}
+/* Research profile follows the same content outline as the publication list. */
+.research-heading{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:48px;align-items:center;margin-top:26px;margin-bottom:8px}
+.research-portrait{display:block;width:100%;height:auto;aspect-ratio:413/531;object-fit:contain;border-radius:8px}
+.research-heading h1{margin:0 0 22px}
+.research-heading .intro{max-width:520px;line-height:1.65}
+@media(max-width:700px){.research-heading{grid-template-columns:minmax(0,1fr) 140px;gap:28px}.research-heading h1{font-size:56px}.research-heading .intro{font-size:16px}}
+@media(max-width:440px){.research-heading{grid-template-columns:minmax(0,1fr) 108px;gap:20px;align-items:center}.research-heading h1{font-size:42px;margin-bottom:14px}.research-heading .intro{font-size:13px}.research-portrait{width:100%;border-radius:6px}html[lang=ko] .research-heading h1{font-size:38px}}
