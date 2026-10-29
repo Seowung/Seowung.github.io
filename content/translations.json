@@ -1,0 +1,76 @@
+{
+  "en": {
+    "nav": [
+      "Home",
+      "Research",
+      "Faith",
+      "Interests",
+      "Life in the US"
+    ],
+    "eyebrow": "A PERSONAL SPACE, IN FOUR CHAPTERS",
+    "headline": "A curious mind.<br>A rooted heart.<br><em>A life unfolding.</em>",
+    "intro": "Research, faith, the things that bring joy, and finding a way through life in the United States. A place to gather it all.",
+    "cta": "Explore the chapters",
+    "chapters": "The four chapters",
+    "sub": "DIFFERENT THREADS. ONE LIFE.",
+    "titles": [
+      "Research",
+      "Faith",
+      "Interests",
+      "Life in the US"
+    ],
+    "desc": [
+      "Questions worth asking. Ideas worth exploring. The ongoing work of learning.",
+      "A space for reflection, belief, and the everyday practice of faith.",
+      "The little things that make life fuller, beyond the workday.",
+      "Finding my footing, one experience and one lesson at a time."
+    ],
+    "explore": "Open chapter",
+    "note": "Every chapter starts somewhere.",
+    "noteBody": "This journal is taking shape. More stories, reflections, and discoveries will find their home here.",
+    "noteTag": "A WORK IN PROGRESS",
+    "footer": "A personal journal. Always unfolding.",
+    "back": "← All chapters",
+    "empty": "The first entry is still ahead.",
+    "emptyBody": "There are no published entries here yet. Come back for new stories and reflections.",
+    "soon": "GROWING SLOWLY",
+    "art": "ROOM TO THINK. ROOM TO GROW."
+  },
+  "ko": {
+    "nav": [
+      "홈",
+      "연구",
+      "신앙",
+      "취미",
+      "미국생활"
+    ],
+    "eyebrow": "네 개의 장으로 기록하는 삶",
+    "headline": "호기심을 품고.<br>믿음에 뿌리내려.<br><em>삶을 써 내려갑니다.</em>",
+    "intro": "연구와 신앙, 일상에 기쁨을 더하는 취미, 그리고 미국에서 살아가는 이야기. 삶의 여러 조각을 모아 두는 공간입니다.",
+    "cta": "네 개의 이야기 둘러보기",
+    "chapters": "삶을 이루는 네 개의 장",
+    "sub": "서로 다른 이야기, 하나의 삶.",
+    "titles": [
+      "연구",
+      "신앙",
+      "취미",
+      "미국생활 생존기"
+    ],
+    "desc": [
+      "의미 있는 질문과 새로운 생각. 배우고 탐구하는 과정을 담습니다.",
+      "묵상과 믿음, 일상 속에서 신앙을 살아가는 이야기를 담습니다.",
+      "일 너머의 삶을 채우는 작은 즐거움과 좋아하는 것들을 기록합니다.",
+      "낯선 곳에서 자리를 잡아가는 경험과 그 안에서 배운 것들을 나눕니다."
+    ],
+    "explore": "이야기 보기",
+    "note": "모든 이야기는 시작이 있으니까요.",
+    "noteBody": "아직은 첫 장을 준비하는 중입니다. 이야기와 묵상, 새로운 발견을 차근차근 채워갑니다.",
+    "noteTag": "조금씩 채워가는 중",
+    "footer": "계속해서 써 내려가는 개인 기록.",
+    "back": "← 모든 이야기",
+    "empty": "첫 번째 이야기를 준비하고 있어요.",
+    "emptyBody": "아직 공개된 글이 없습니다. 새로운 이야기와 생각을 이곳에서 나눌 예정입니다.",
+    "soon": "천천히 자라는 공간",
+    "art": "생각이 머무는 곳. 삶이 자라는 곳."
+  }
+}
