@@ -60,3 +60,6 @@ GoatCounter 계정이 필요합니다. content/analytics.json의 siteCode에 계
 
 ## 홈 조회 수 그래프
 홈 하단에 GoatCounter TOTAL 누적 조회 수와 최근 7일(UTC) 일별 막대그래프를 표시합니다. 로컬 미리보기에서도 공개 통계를 읽을 수 있지만 추적 스크립트는 로드하지 않아 방문 기록을 만들지 않습니다. 실제 값이 0이면 0으로 표시하며, 조회에 실패하면 숫자를 임의로 만들지 않고 로딩/조회 불가 안내를 표시합니다. API 결과는 최대 4시간 캐시될 수 있습니다. 각 날짜의 start/end를 같은 날짜로 요청합니다.
+
+## 취미 분류와 체험형 사진
+취미 글은 section: interests, category: cooking(요리) 또는 tech(테크)로 분류합니다. galleryMode: experience와 images 배열(src, alt, caption)을 넣으면 썸네일·좌우 버튼·키보드·터치 스와이프·확대 보기를 제공합니다. location 객체에 name과 address를 넣으면 Google Maps 지도가 삽입됩니다. 본문과 사진 설명은 원문 언어로 입력하세요.
