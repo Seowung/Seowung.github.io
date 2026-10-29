@@ -34,7 +34,11 @@
     "empty": "The first entry is still ahead.",
     "emptyBody": "There are no published entries here yet. Come back for new stories and reflections.",
     "soon": "GROWING SLOWLY",
-    "art": "ROOM TO THINK. ROOM TO GROW."
+    "art": "ROOM TO THINK. ROOM TO GROW.",
+    "lifeCategories": {
+      "survival": "Surviving in the US as a Student & Immigrant",
+      "ramblings": "Random Ramblings"
+    }
   },
   "ko": {
     "nav": [
@@ -71,6 +75,10 @@
     "empty": "첫 번째 이야기를 준비하고 있어요.",
     "emptyBody": "아직 공개된 글이 없습니다. 새로운 이야기와 생각을 이곳에서 나눌 예정입니다.",
     "soon": "천천히 자라는 공간",
-    "art": "생각이 머무는 곳. 삶이 자라는 곳."
+    "art": "생각이 머무는 곳. 삶이 자라는 곳.",
+    "lifeCategories": {
+      "survival": "미국에서 유학생&이민자로 살아남기",
+      "ramblings": "아무말 대잔치"
+    }
   }
 }
