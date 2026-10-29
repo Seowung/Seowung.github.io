@@ -1,0 +1,32 @@
+{
+  "name": "Seowung Leem",
+  "position": {
+    "en": "Postdoctoral Associate",
+    "ko": "박사후연구원"
+  },
+  "institution": "University of Florida",
+  "education": [
+    {
+      "degree": {
+        "en": "Doctor of Philosophy",
+        "ko": "박사 (Doctor of Philosophy)"
+      },
+      "institution": "University of Florida"
+    },
+    {
+      "degree": {
+        "en": "Bachelor of Engineering",
+        "ko": "공학사 (Bachelor of Engineering)"
+      },
+      "institution": "Korea University"
+    }
+  ],
+  "links": {
+    "scholar": "https://scholar.google.com/citations?user=3N0W1fYAAAAJ",
+    "linkedin": "https://www.linkedin.com/in/seowung-leem-1254951ba/"
+  },
+  "publicationNote": {
+    "en": "Compiled from Google Scholar and conference sources, with duplicate entries consolidated. Includes preprints and conference presentations.",
+    "ko": "Google Scholar와 학회 정보를 바탕으로 중복 항목을 통합했습니다. 프리프린트와 학회 발표를 포함합니다."
+  }
+}
