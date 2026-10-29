@@ -1,6 +1,8 @@
 {
-  "enabled": false,
-  "siteCode": "",
-  "allowedHosts": ["seowung.github.io"],
+  "enabled": true,
+  "siteCode": "seowung",
+  "allowedHosts": [
+    "seowung.github.io"
+  ],
   "showPublicCounter": true
 }
