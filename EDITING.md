@@ -50,3 +50,10 @@ GitHub에 저장해도 현재 컴퓨터의 localhost 미리보기에는 자동 �
 
 ## 미국생활 하위 분류
 Life in the US 글에는 `category`를 추가합니다. `survival`은 미국에서 유학생&이민자로 살아남기, `ramblings`는 아무말 대잔치입니다. 하위 분류 이름은 content/translations.json의 lifeCategories에서 수정합니다. 글의 en/ko에 각각 제목과 본문을 입력합니다. 한국어 원문과 영어 번역은 언어 스위치로 전환됩니다.
+
+## 방문 통계와 공개 카운터 (연결 준비 완료, 현재 비활성)
+GoatCounter 계정이 필요합니다. content/analytics.json의 siteCode에 계정의 사이트 코드를 넣고 enabled를 true로 변경합니다. 실제 공개 주소만 allowedHosts에 등록하세요. localhost에서는 외부 분석 스크립트를 불러오지 않으며 집계하지 않습니다.
+
+관리자 통계: https://사이트코드.goatcounter.com 에 로그인합니다. 전체 통계 공개 설정은 끈 상태로 유지하세요. 공개 카운터만 사용하려면 GoatCounter 설정의 “Allow adding visitor counts on your website”를 켭니다. showPublicCounter를 false로 하면 숫자 표시를 숨길 수 있습니다. 공개 숫자는 TOTAL의 누적 조회 수이며 고유 인원 수가 아닙니다. 서비스 캐시 때문에 최대 4시간 지연될 수 있습니다.
+
+화면별 이동은 집계하지만 언어 전환과 목차 스크롤은 중복 집계하지 않습니다. 현재 life 통계는 하위 분류별로 집계합니다. 검색어나 URL query는 보내지 않으며 referrer도 비워 보냅니다. 비밀 API 토큰은 사이트 파일에 넣지 마세요. 계정이 연결되기 전에는 숫자를 표시하지 않습니다. 현재 GitHub Pages 공개 배포도 켜지 않습니다.
