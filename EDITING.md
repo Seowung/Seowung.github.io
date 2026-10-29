@@ -47,3 +47,6 @@ GitHub에 저장해도 현재 컴퓨터의 localhost 미리보기에는 자동 �
 
 ## 논문 게시 날짜와 DOI
 `publishedDate`를 YYYY-MM-DD, YYYY-MM, YYYY 중 확인 가능한 정밀도로 입력합니다. 날짜가 자세한 항목을 우선해 최신순으로 정렬합니다. 같은 날짜는 파일 순서를 유지합니다. 온라인 공개일이 확인되면 그 날짜를 사용하고, 아니면 출판 메타데이터의 날짜를 사용합니다. 정확한 날짜를 모르는데 1월 1일 등을 임의로 입력하지 마세요. `venue`에는 학술지·학회 이름만, `doi`에는 `10.…` 형식의 DOI 문자열만 입력합니다. 확인되지 않은 DOI는 null로 둡니다. sources에는 검증에 사용한 주소를 기록합니다. `dateNote`는 필요한 경우 en/ko 설명을 담습니다.
+
+## 미국생활 하위 분류
+Life in the US 글에는 `category`를 추가합니다. `survival`은 미국에서 유학생&이민자로 살아남기, `ramblings`는 아무말 대잔치입니다. 하위 분류 이름은 content/translations.json의 lifeCategories에서 수정합니다. 글의 en/ko에 각각 제목과 본문을 입력합니다. 한국어 원문과 영어 번역은 언어 스위치로 전환됩니다.
