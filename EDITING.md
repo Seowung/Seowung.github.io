@@ -57,3 +57,6 @@ GoatCounter 계정이 필요합니다. content/analytics.json의 siteCode에 계
 관리자 통계: https://사이트코드.goatcounter.com 에 로그인합니다. 전체 통계 공개 설정은 끈 상태로 유지하세요. 공개 카운터만 사용하려면 GoatCounter 설정의 “Allow adding visitor counts on your website”를 켭니다. showPublicCounter를 false로 하면 숫자 표시를 숨길 수 있습니다. 공개 숫자는 TOTAL의 누적 조회 수이며 고유 인원 수가 아닙니다. 서비스 캐시 때문에 최대 4시간 지연될 수 있습니다.
 
 화면별 이동은 집계하지만 언어 전환과 목차 스크롤은 중복 집계하지 않습니다. 현재 life 통계는 하위 분류별로 집계합니다. 검색어나 URL query는 보내지 않으며 referrer도 비워 보냅니다. 비밀 API 토큰은 사이트 파일에 넣지 마세요. 계정이 연결되기 전에는 숫자를 표시하지 않습니다. 현재 GitHub Pages 공개 배포도 켜지 않습니다.
+
+## 홈 조회 수 그래프
+홈 하단에 GoatCounter TOTAL 누적 조회 수와 최근 7일(UTC) 일별 막대그래프를 표시합니다. 로컬 미리보기에서도 공개 통계를 읽을 수 있지만 추적 스크립트는 로드하지 않아 방문 기록을 만들지 않습니다. 실제 값이 0이면 0으로 표시하며, 조회에 실패하면 숫자를 임의로 만들지 않고 로딩/조회 불가 안내를 표시합니다. API 결과는 최대 4시간 캐시될 수 있습니다. 각 날짜의 start/end를 같은 날짜로 요청합니다.
