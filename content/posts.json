@@ -1,5 +1,66 @@
 [
   {
+    "id": "cooking-01-rocca-tampa",
+    "section": "interests",
+    "category": "cooking",
+    "published": true,
+    "date": "2026-10-29",
+    "ko": {
+      "title": "요리 1: Tampa의 ROCCA",
+      "body": [
+        "첫 번째로 소개할 식당은 Tampa의 ROCCA.",
+        "이탈리안을 주로 하며, 주기적으로 메뉴 체인지가 있는 곳이라 좋다. 오리 가슴살 요리를 제외하면 다 A La Carte로 먹을 수 있어서 내 지갑 사정에 맞게 골라 먹을 수 있다는 것이 장점. 여기서는 Mozzarella Cart는 무조건 먹어야 한다. 재료들이 워낙 다 좋다 보니, 우리가 다 아는 흔한 카프레제 조합임에도 맛있다는 인상을 세게 준다. 오리 가슴살 요리는 한 번쯤은 먹어 보는 것을 추천한다. 향신료를 다양하게 쓰다 보니 향이 복잡하지만, 향기롭고 오리 맛을 향상시키는 효과를 준다. 에피타이저들이 개인적으로 정말 맛있다고 생각하는 곳."
+      ]
+    },
+    "galleryMode": "experience",
+    "images": [
+      {
+        "src": "./assets/rocca-01.jpg",
+        "alt": "식사의 시작, 빵과 함께",
+        "caption": "식사의 시작, 빵과 함께"
+      },
+      {
+        "src": "./assets/rocca-02.jpg",
+        "alt": "Mozzarella Cart",
+        "caption": "Mozzarella Cart"
+      },
+      {
+        "src": "./assets/rocca-03.jpg",
+        "alt": "초록빛으로 담아낸 한 접시",
+        "caption": "초록빛으로 담아낸 한 접시"
+      },
+      {
+        "src": "./assets/rocca-04.jpg",
+        "alt": "섬세한 플레이팅",
+        "caption": "섬세한 플레이팅"
+      },
+      {
+        "src": "./assets/rocca-05.jpg",
+        "alt": "풍성한 토핑의 한 접시",
+        "caption": "풍성한 토핑의 한 접시"
+      },
+      {
+        "src": "./assets/rocca-06.jpg",
+        "alt": "함께 나누는 오리 요리",
+        "caption": "함께 나누는 오리 요리"
+      },
+      {
+        "src": "./assets/rocca-07.jpg",
+        "alt": "딸기로 마무리하는 순간",
+        "caption": "딸기로 마무리하는 순간"
+      },
+      {
+        "src": "./assets/rocca-08.jpg",
+        "alt": "마지막 한 스푼",
+        "caption": "마지막 한 스푼"
+      }
+    ],
+    "location": {
+      "name": "ROCCA",
+      "address": "323 W Palm Ave, Tampa, FL 33602"
+    }
+  },
+  {
     "id": "ramblings-01-iphone-duo-short-term-review",
     "section": "life",
     "category": "ramblings",
