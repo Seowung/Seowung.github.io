@@ -15,3 +15,16 @@
 .research-heading .intro{max-width:520px;line-height:1.65}
 @media(max-width:700px){.research-heading{grid-template-columns:minmax(0,1fr) 140px;gap:28px}.research-heading h1{font-size:56px}.research-heading .intro{font-size:16px}}
 @media(max-width:440px){.research-heading{grid-template-columns:minmax(0,1fr) 108px;gap:20px;align-items:center}.research-heading h1{font-size:42px;margin-bottom:14px}.research-heading .intro{font-size:13px}.research-portrait{width:100%;border-radius:6px}html[lang=ko] .research-heading h1{font-size:38px}}
+/* Compact phones, cover displays, and unfolded screens use available width. */
+@media(max-width:850px){
+ header{column-gap:16px;row-gap:16px}nav{overflow-x:auto;white-space:nowrap;padding-bottom:4px;scrollbar-width:thin}nav a{min-height:44px;display:flex;align-items:center;flex-shrink:0}.languages button{min-height:44px;min-width:36px}.languages{gap:6px}
+ .page{width:100%;padding-top:36px}.page .intro{overflow-wrap:anywhere}.research-heading{grid-template-columns:minmax(0,1fr) clamp(108px,21vw,180px);gap:clamp(18px,4vw,36px)}.research-heading h1{font-size:clamp(42px,7vw,64px)}.research-heading .intro{font-size:clamp(14px,2vw,17px)}.profile-links .pill{min-height:44px}.publication-list h3{overflow-wrap:anywhere}.publication-details{line-height:1.8}.publication-list p{font-size:13px}.publication-list li{padding:26px 0}.section-head h2{font-size:clamp(25px,4vw,31px)}
+}
+@media(min-width:581px) and (max-width:1000px){.page{max-width:850px}.research-grid{grid-template-columns:1fr 1fr}.chapters{grid-template-columns:1fr 1fr}.hero{gap:28px}.hero h1{font-size:clamp(50px,7vw,70px)}}
+@media(max-width:580px){
+ header{margin:0 5%;padding:16px 0}.brand{font-size:27px}.brand span{font-size:7px;letter-spacing:1.8px}nav{justify-content:space-between;gap:18px;font-size:12px}main{padding:0 5%}.research-grid{grid-template-columns:1fr;gap:24px}.research-heading{margin-top:22px}.research-heading h1{margin-bottom:16px}.research-heading .intro{font-size:14px}.profile-links{gap:10px}.profile-links .pill{padding:10px 16px;gap:12px}.publication-section{margin-top:36px}.publication-section .section-head{align-items:flex-start}.publication-section .section-head span{display:block;white-space:nowrap;font-size:9px}.publication-list h3{font-size:23px;line-height:1.45}.publication-details{flex-direction:column;gap:4px}.pub-meta{font-size:11px}.back{display:inline-flex;min-height:44px;align-items:center}footer{font-size:11px}
+}
+@media(max-width:359px){
+ .brand{font-size:25px}.brand span{max-width:160px;line-height:1.5}.languages{font-size:10px;gap:2px}.languages button{min-width:30px}header{gap:12px}.research-heading{grid-template-columns:minmax(0,1fr) 88px;gap:14px}.research-heading h1{font-size:36px}.research-heading .intro{font-size:13px}html[lang=ko] .research-heading h1{font-size:34px}.chapters{grid-template-columns:1fr}.card p{min-height:0}.hero h1{font-size:52px}.section-head h2{font-size:25px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
