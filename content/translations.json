@@ -38,6 +38,10 @@
     "lifeCategories": {
       "survival": "Surviving in the US as a Student & Immigrant",
       "ramblings": "Random Ramblings"
+    },
+    "interestCategories": {
+      "cooking": "Cooking",
+      "tech": "Tech"
     }
   },
   "ko": {
@@ -79,6 +83,10 @@
     "lifeCategories": {
       "survival": "미국에서 유학생&이민자로 살아남기",
       "ramblings": "아무말 대잔치"
+    },
+    "interestCategories": {
+      "cooking": "요리",
+      "tech": "테크"
     }
   }
 }
