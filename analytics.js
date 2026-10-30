@@ -11,6 +11,7 @@
   const origin = 'https://' + config.siteCode + '.goatcounter.com';
   let lastPath, totalCount;
   let dailyCounts = null;
+  let lastChecked = null, refreshing = false, lastAttempt = 0;
   function path() {
     const parts = location.hash.replace(/^#\/?/, '').split('/');
     const section = ['home','research','faith','interests','life'].includes(parts[0]) ? parts[0] : 'home';
@@ -72,29 +73,48 @@
         item.append(number,track,label);bars.append(item);
       });chart.append(bars);
     } else {const message=document.createElement('p');message.textContent=ko?'일별 통계를 불러오는 중이거나 아직 확인할 수 없습니다.':'Daily statistics are loading or unavailable.';chart.append(message);}
-    const note=document.createElement('p');note.className='visits-note';note.textContent=ko?'최근 7일 · UTC 기준 · 조회 수는 고유 방문자 수와 다르며 최대 4시간 늦게 반영될 수 있습니다.':'Last 7 days · UTC · Views are not unique visitors. Updates may be delayed by up to 4 hours.';chart.append(note);
+    const note=document.createElement('p');note.className='visits-note';note.textContent=ko?'최근 7일 · UTC 기준 · 5분마다 확인합니다. GoatCounter 공개 통계는 최대 4시간 지연될 수 있습니다. 조회 수는 고유 방문자 수와 다릅니다.':'Last 7 days · UTC · Checked every 5 minutes. GoatCounter public statistics may lag by up to 4 hours. Views are not unique visitors.';chart.append(note);
+    if(lastChecked){const checked=document.createElement('p');checked.className='visits-note';checked.textContent=(ko?'최근 확인: ':'Last checked: ')+lastChecked.toLocaleTimeString(ko?'ko-KR':'en-US',{hour:'2-digit',minute:'2-digit',timeZone:'UTC'})+' UTC';chart.append(checked);}
   }
   if (config.showPublicCounter) {
     display();
     new MutationObserver(display).observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
-    try {
-      const response = await fetch(origin + '/counter/TOTAL.json', {credentials:'omit'});
-      if (response.ok) {
-        const data = await response.json();
-        if (typeof data.count === 'string' || typeof data.count === 'number') totalCount = String(data.count);
-      }
-    } catch { /* Counter failure must never affect the website. */ }
-    const dates=Array.from({length:7},(_,i)=>{const date=new Date();date.setUTCDate(date.getUTCDate()-(6-i));return date.toISOString().slice(0,10)});
-    try {
-      dailyCounts=await Promise.all(dates.map(async date=>{
-        const response=await fetch(origin+'/counter/TOTAL.json?start='+date+'&end='+date,{credentials:'omit'});
-        if (!response.ok) throw Error('Daily count unavailable');
-        const data=await response.json();const raw=String(data.count??'');
-        if (!/^\d[\d,]*$/.test(raw)) throw Error('Invalid daily count');
-        return {date,count:Number(raw.replace(/,/g,''))};
-      }));
-    } catch {dailyCounts=null;}
-    display();
+    function dayRanges(now) {
+      const midnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+      return Array.from({length:7},(_,i)=>{
+        const start=new Date(midnight);start.setUTCDate(start.getUTCDate()-(6-i));
+        const end=new Date(start);end.setUTCDate(end.getUTCDate()+1);
+        return {date:start.toISOString().slice(0,10),end:end.toISOString().slice(0,10)};
+      });
+    }
+    async function readCount(url) {
+      const response=await fetch(url,{credentials:'omit',cache:'no-cache'});
+      if(!response.ok) throw Error('Count unavailable');
+      const data=await response.json();
+      const raw=String(data.count??'');
+      if(!/^\d[\d,]*$/.test(raw)) throw Error('Invalid count');
+      return Number(raw.replace(/,/g,''));
+    }
+    async function refreshStats() {
+      // Refresh public snapshots without pretending to bypass GoatCounter's cache.
+      if(refreshing || Date.now()-lastAttempt<60000) return;
+      refreshing=true;lastAttempt=Date.now();
+      try {
+        const results=await Promise.allSettled([
+          readCount(origin+'/counter/TOTAL.json'),
+          Promise.all(dayRanges(new Date()).map(async ({date,end})=>({
+            date,count:await readCount(origin+'/counter/TOTAL.json?start='+date+'&end='+end)
+          })))
+        ]);
+        if(results[0].status==='fulfilled') totalCount=String(results[0].value);
+        if(results[1].status==='fulfilled') dailyCounts=results[1].value;
+        if(results.some(result=>result.status==='fulfilled')) lastChecked=new Date();
+      } finally {refreshing=false;display();}
+    }
+    await refreshStats();
+    setInterval(()=>{if(!document.hidden)refreshStats()},5*60*1000);
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshStats()});
+    window.addEventListener('hashchange',()=>{if(path()==='/home')refreshStats()});
     new MutationObserver(()=>{if(path()==='/home'&&!document.getElementById('visits-chart'))renderChart()}).observe(document.querySelector('#main'),{childList:true});
   }
 })();
